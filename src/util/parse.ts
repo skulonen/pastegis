@@ -250,27 +250,27 @@ function parseShapeBytes(
     type == shapeTypes.polygonZ ||
     type == shapeTypes.generalPolygon;
 
-  const hasZ =
-    (modifier & 0x80000000) == 0x80000000 ||
-    type == shapeTypes.pointZ ||
-    type == shapeTypes.pointZM ||
-    type == shapeTypes.multipointZ ||
-    type == shapeTypes.multipointZM ||
-    type == shapeTypes.polylineZ ||
-    type == shapeTypes.polylineZM ||
-    type == shapeTypes.polygonZ ||
-    type == shapeTypes.polygonZM;
-  const hasM =
-    (modifier & 0x40000000) == 0x40000000 ||
-    type == shapeTypes.pointM ||
-    type == shapeTypes.pointZM ||
-    type == shapeTypes.multipointM ||
-    type == shapeTypes.multipointZM ||
-    type == shapeTypes.polylineM ||
-    type == shapeTypes.polylineZM ||
-    type == shapeTypes.polygonM ||
-    type == shapeTypes.polygonZM;
-  const hasID = (modifier & 0x10000000) == 0x10000000;
+  // const hasZ =
+  //   (modifier & 0x80000000) == 0x80000000 ||
+  //   type == shapeTypes.pointZ ||
+  //   type == shapeTypes.pointZM ||
+  //   type == shapeTypes.multipointZ ||
+  //   type == shapeTypes.multipointZM ||
+  //   type == shapeTypes.polylineZ ||
+  //   type == shapeTypes.polylineZM ||
+  //   type == shapeTypes.polygonZ ||
+  //   type == shapeTypes.polygonZM;
+  // const hasM =
+  //   (modifier & 0x40000000) == 0x40000000 ||
+  //   type == shapeTypes.pointM ||
+  //   type == shapeTypes.pointZM ||
+  //   type == shapeTypes.multipointM ||
+  //   type == shapeTypes.multipointZM ||
+  //   type == shapeTypes.polylineM ||
+  //   type == shapeTypes.polylineZM ||
+  //   type == shapeTypes.polygonM ||
+  //   type == shapeTypes.polygonZM;
+  // const hasID = (modifier & 0x10000000) == 0x10000000;
   const hasCurves = (modifier & 0x20000000) == 0x20000000;
 
   if (hasCurves) {
