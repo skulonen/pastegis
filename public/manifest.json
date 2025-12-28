@@ -1,0 +1,16 @@
+{
+  "name": "PasteGIS",
+  "icons": [
+    {
+      "src": "pastegis.svg",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "description": "GIS clipboard app",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}
